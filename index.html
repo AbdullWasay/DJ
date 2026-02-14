@@ -35,8 +35,8 @@
       <div class="brand">
         <div class="logo-box">🎧</div>
         <div>
-          <div>DJ HAN</div>
-          <small>DJ • Musician • MC</small>
+          <div id="nav-brand">DJ HAN</div>
+          <small id="nav-subtitle">DJ • Musician • MC</small>
         </div>
       </div>
 
@@ -47,22 +47,22 @@
         <a href="#book">Book</a>
       </nav>
 
-      <a class="btn btn-primary" href="#book">Book Now</a>
+      <a id="nav-btn" class="btn btn-primary" href="#book">Book Now</a>
     </div>
   </header>
 
   <section class="hero">
     <div class="container hero-inner">
       <div>
-        <div class="kicker">Los Angeles • Available for travel</div>
-        <h1 class="h1">Turn your event into a night they’ll never forget.</h1>
-        <p class="sub">
+        <div id="hero-kicker" class="kicker">Los Angeles • Available for travel</div>
+        <h1 id="hero-title" class="h1">Turn your event into a night they’ll never forget.</h1>
+        <p id="hero-subtitle" class="sub">
           Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events.
           Clean sound. High energy. Crowd-reading mastery.
         </p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#book">🎧 Book DJ Han</a>
-          <a class="btn btn-outline" href="#media">🎶 Watch Live Moments</a>
+          <a id="hero-btn-primary" class="btn btn-primary" href="#book">🎧 Book DJ Han</a>
+          <a id="hero-btn-secondary" class="btn btn-outline" href="#media">🎶 Watch Live Moments</a>
         </div>
 
         <img class="divider" src="assets/divider.png" alt="divider" />
@@ -80,82 +80,37 @@
 
   <section id="why" class="section">
     <div class="container">
-      <h2 class="section-title">Why DJ Han</h2>
-      <p class="section-sub">A premium nightlife feel with professional execution — so your crowd stays locked in from
-        the first song to the last.</p>
+      <h2 id="why-title" class="section-title">Why DJ Han</h2>
+      <p id="why-subtitle" class="section-sub">A premium nightlife feel with professional execution — so your crowd
+        stays locked in from the first song to the last.</p>
 
-      <div class="grid3">
-        <div class="card">
-          <div class="icon"><img src="assets/icon_music.svg" width="28" height="28" alt=""></div>
-          <h3>High‑Energy Sets</h3>
-          <p>Clean transitions, smart build-ups, and the right songs at the right time.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><img src="assets/icon_mic.svg" width="28" height="28" alt=""></div>
-          <h3>Confident MC</h3>
-          <p>Clear announcements, smooth flow, and great pacing — without the cringe.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><img src="assets/icon_speaker.svg" width="28" height="28" alt=""></div>
-          <h3>Pro Sound</h3>
-          <p>Reliable setup, polished audio, and a professional look from setup to teardown.</p>
-        </div>
+      <div id="why-cards" class="grid3">
+        <!-- Cards injected by JS -->
       </div>
     </div>
   </section>
 
   <section id="events" class="section alt">
     <div class="container">
-      <h2 class="section-title">Events We Rock</h2>
-      <p class="section-sub">Pick your vibe — we’ll tailor the music and energy to match your crowd.</p>
+      <h2 id="events-title" class="section-title">Events We Rock</h2>
+      <p id="events-subtitle" class="section-sub">Pick your vibe — we’ll tailor the music and energy to match your
+        crowd.</p>
 
-      <div class="events">
-        <div class="event"><strong>Weddings</strong>
-          <div class="badge">Elegant • Hype • Seamless</div>
-        </div>
-        <div class="event"><strong>Bar / Bat Mitzvah</strong>
-          <div class="badge">Energy • Games • Moments</div>
-        </div>
-        <div class="event"><strong>Private Parties</strong>
-          <div class="badge">Birthdays • House parties</div>
-        </div>
-        <div class="event"><strong>Corporate Events</strong>
-          <div class="badge">Upscale • Professional</div>
-        </div>
-        <div class="event"><strong>Community Events</strong>
-          <div class="badge">Fun • Organized • Clean</div>
-        </div>
-        <div class="event"><strong>Engagements</strong>
-          <div class="badge">Romantic • Celebration</div>
-        </div>
-        <div class="event"><strong>After Parties</strong>
-          <div class="badge">Club vibe • Late night</div>
-        </div>
-        <div class="event"><strong>Custom</strong>
-          <div class="badge">Tell me what you need</div>
-        </div>
+      <div id="events-list" class="events">
+        <!-- Events injected by JS -->
       </div>
     </div>
   </section>
 
   <section id="media" class="section">
     <div class="container">
-      <h2 class="section-title">Live Moments</h2>
-      <p class="section-sub">Swap this video embed with your YouTube / Instagram reel compilation.</p>
+      <h2 id="media-title" class="section-title">Live Moments</h2>
+      <p id="media-subtitle" class="section-sub">Swap this video embed with your YouTube / Instagram reel compilation.
+      </p>
 
       <div class="video">
         <video id="heroVideo" controls style="width:100%; height:auto; aspect-ratio:16/9; display:block"></video>
       </div>
-      <script>
-        fetch('content/video.json')
-          .then(res => res.json())
-          .then(data => {
-            if (data.videoUrl) {
-              document.getElementById('heroVideo').src = data.videoUrl;
-            }
-          })
-          .catch(err => console.error('Error loading video:', err));
-      </script>
     </div>
   </section>
 
@@ -163,10 +118,10 @@
     <div class="container">
       <div class="cta">
         <div>
-          <h2 class="section-title" style="margin:0 0 6px">Ready to lock in your date?</h2>
-          <div class="badge">Dates fill fast — secure yours today.</div>
+          <h2 id="cta-title" class="section-title" style="margin:0 0 6px">Ready to lock in your date?</h2>
+          <div id="cta-badge" class="badge">Dates fill fast — secure yours today.</div>
         </div>
-        <a class="btn btn-primary" href="#book">📅 Check Availability</a>
+        <a id="cta-btn" class="btn btn-primary" href="#book">📅 Check Availability</a>
       </div>
     </div>
   </section>
@@ -203,14 +158,99 @@
       <div class="brand">
         <div class="logo-box">🎧</div>
         <div>
-          <div>DJ HAN</div>
-          <small>Book for your next event</small>
+          <div id="footer-brand">DJ HAN</div>
+          <small id="footer-subtitle">Book for your next event</small>
         </div>
 
       </div>
-      <div class="badge">Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan</div>
+      <div id="footer-contact" class="badge">Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan</div>
     </div>
   </footer>
+
+  <script>
+    // Helper to safely set text content if element exists
+    const safeSetText = (id, text) => {
+      const el = document.getElementById(id);
+      if (el && text) el.textContent = text;
+    };
+
+    fetch('content/data.json')
+      .then(res => res.json())
+      .then(data => {
+        // Nav
+        if (data.nav) {
+          safeSetText('nav-brand', data.nav.brand);
+          safeSetText('nav-subtitle', data.nav.subtitle);
+          safeSetText('nav-btn', data.nav.btn);
+        }
+
+        // Hero
+        if (data.hero) {
+          safeSetText('hero-kicker', data.hero.kicker);
+          safeSetText('hero-title', data.hero.title);
+          safeSetText('hero-subtitle', data.hero.subtitle);
+          safeSetText('hero-btn-primary', data.hero.btn_primary);
+          safeSetText('hero-btn-secondary', data.hero.btn_secondary);
+        }
+
+        // Video
+        if (data.videoUrl) {
+          document.getElementById('heroVideo').src = data.videoUrl;
+        }
+
+        // Why Section
+        if (data.why) {
+          safeSetText('why-title', data.why.title);
+          safeSetText('why-subtitle', data.why.subtitle);
+
+          if (data.why.cards && Array.isArray(data.why.cards)) {
+            const container = document.getElementById('why-cards');
+            container.innerHTML = data.why.cards.map(card => `
+            <div class="card">
+              <div class="icon"><img src="assets/${card.icon || 'icon_music.svg'}" width="28" height="28" alt=""></div>
+              <h3>${card.title}</h3>
+              <p>${card.desc}</p>
+            </div>
+          `).join('');
+          }
+        }
+
+        // Events Section
+        if (data.events) {
+          safeSetText('events-title', data.events.title);
+          safeSetText('events-subtitle', data.events.subtitle);
+
+          if (data.events.list && Array.isArray(data.events.list)) {
+            const container = document.getElementById('events-list');
+            container.innerHTML = data.events.list.map(evt => `
+            <div class="event"><strong>${evt.name}</strong><div class="badge">${evt.badge}</div></div>
+          `).join('');
+          }
+        }
+
+        // Media
+        if (data.media) {
+          safeSetText('media-title', data.media.title);
+          safeSetText('media-subtitle', data.media.subtitle);
+        }
+
+        // CTA
+        if (data.cta) {
+          safeSetText('cta-title', data.cta.title);
+          safeSetText('cta-badge', data.cta.badge);
+          safeSetText('cta-btn', data.cta.btn);
+        }
+
+        // Footer
+        if (data.footer) {
+          safeSetText('footer-brand', data.footer.brand);
+          safeSetText('footer-subtitle', data.footer.subtitle);
+          safeSetText('footer-contact', data.footer.contact);
+        }
+
+      })
+      .catch(err => console.error('Error loading content:', err));
+  </script>
 
 </body>
 

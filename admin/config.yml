@@ -9,8 +9,94 @@ collections:
   - name: "site"
     label: "Site Content"
     files:
-      - file: "content/video.json"
-        label: "Homepage Video"
-        name: "video"
+      - file: "content/data.json"
+        label: "Website Content"
+        name: "data"
         fields:
-          - { label: "Video URL", name: "videoUrl", widget: "file" }
+          - label: "Homepage Video"
+            name: "videoUrl"
+            widget: "file"
+            required: false
+            hint: "Upload an MP4 video here to replace the hero video."
+
+          - label: "Navigation Bar"
+            name: "nav"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Brand Name", name: "brand", widget: "string", default: "DJ HAN" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", default: "DJ • Musician • MC" }
+              - { label: "Button Text", name: "btn", widget: "string", default: "Book Now" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Top Kicker", name: "kicker", widget: "string", default: "Los Angeles • Available for travel" }
+              - { label: "Main Title", name: "title", widget: "string", default: "Turn your event into a night they’ll never forget." }
+              - { label: "Description", name: "subtitle", widget: "text", default: "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events." }
+              - { label: "Primary Button", name: "btn_primary", widget: "string", default: "🎧 Book DJ Han" }
+              - { label: "Secondary Button", name: "btn_secondary", widget: "string", default: "🎶 Watch Live Moments" }
+
+          - label: "Why DJ Han?"
+            name: "why"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: "title", widget: "string", default: "Why DJ Han" }
+              - { label: "Section Subtitle", name: "subtitle", widget: "text", default: "A premium nightlife feel with professional execution." }
+              - label: "Feature Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                   - { label: "Title", name: "title", widget: "string" }
+                   - { label: "Description", name: "desc", widget: "text" }
+                   - label: "Icon"
+                     name: "icon"
+                     widget: "select"
+                     options: 
+                       - { label: "Music Note", value: "icon_music.svg" }
+                       - { label: "Microphone", value: "icon_mic.svg" }
+                       - { label: "Speaker", value: "icon_speaker.svg" }
+                     default: "icon_music.svg"
+
+          - label: "Events Section"
+            name: "events"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: "title", widget: "string", default: "Events We Rock" }
+              - { label: "Section Subtitle", name: "subtitle", widget: "string", default: "Pick your vibe — we’ll tailor the music and energy to match your crowd." }
+              - label: "Event List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Event Name", name: "name", widget: "string" }
+                  - { label: "Tags/Badge", name: "badge", widget: "string" }
+
+          - label: "Live Moments"
+            name: "media"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: "title", widget: "string", default: "Live Moments" }
+              - { label: "Section Subtitle", name: "subtitle", widget: "string", default: "Swap this video embed with your YouTube / Instagram reel compilation." }
+
+          - label: "Call to Action (Ready to Book)"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", default: "Ready to lock in your date?" }
+              - { label: "Badge Text", name: "badge", widget: "string", default: "Dates fill fast — secure yours today." }
+              - { label: "Button Text", name: "btn", widget: "string", default: "📅 Check Availability" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+               - { label: "Brand Name", name: "brand", widget: "string", default: "DJ HAN" }
+               - { label: "Subtitle", name: "subtitle", widget: "string", default: "Book for your next event" }
+               - { label: "Contact Info Line", name: "contact", widget: "string", default: "Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan" }
