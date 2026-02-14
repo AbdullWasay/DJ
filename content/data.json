@@ -1,88 +1,88 @@
 {
-    "nav": {
-        "brand": "DJ HAN",
-        "subtitle": "DJ • Musician • MC",
-        "btn": "Book Now"
-    },
-    "hero": {
-        "kicker": "Los Angeles • Available for travel",
-        "title": "Turn your event into a night they’ll never forget.",
-        "subtitle": "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events. Clean sound. High energy. Crowd-reading mastery.",
-        "btn_primary": "🎧 Book DJ Han",
-        "btn_secondary": "🎶 Watch Live Moments"
-    },
-    "why": {
-        "title": "Why DJ Han",
-        "subtitle": "A premium nightlife feel with professional execution — so your crowd stays locked in from the first song to the last.",
-        "cards": [
-            {
-                "title": "High‑Energy Sets",
-                "desc": "Clean transitions, smart build-ups, and the right songs at the right time.",
-                "icon": "icon_music.svg"
-            },
-            {
-                "title": "Confident MC",
-                "desc": "Clear announcements, smooth flow, and great pacing — without the cringe.",
-                "icon": "icon_mic.svg"
-            },
-            {
-                "title": "Pro Sound",
-                "desc": "Reliable setup, polished audio, and a professional look from setup to teardown.",
-                "icon": "icon_speaker.svg"
-            }
-        ]
-    },
-    "events": {
-        "title": "Events We Rock",
-        "subtitle": "Pick your vibe — we’ll tailor the music and energy to match your crowd.",
-        "list": [
-            {
-                "name": "Weddings",
-                "badge": "Elegant • Hype • Seamless"
-            },
-            {
-                "name": "Bar / Bat Mitzvah",
-                "badge": "Energy • Games • Moments"
-            },
-            {
-                "name": "Private Parties",
-                "badge": "Birthdays • House parties"
-            },
-            {
-                "name": "Corporate Events",
-                "badge": "Upscale • Professional"
-            },
-            {
-                "name": "Community Events",
-                "badge": "Fun • Organized • Clean"
-            },
-            {
-                "name": "Engagements",
-                "badge": "Romantic • Celebration"
-            },
-            {
-                "name": "After Parties",
-                "badge": "Club vibe • Late night"
-            },
-            {
-                "name": "Custom",
-                "badge": "Tell me what you need"
-            }
-        ]
-    },
-    "media": {
-        "title": "Live Moments",
-        "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
-    },
-    "cta": {
-        "title": "Ready to lock in your date?",
-        "badge": "Dates fill fast — secure yours today.",
-        "btn": "📅 Check Availability"
-    },
-    "footer": {
-        "brand": "DJ HAN",
-        "subtitle": "Book for your next event",
-        "contact": "Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan"
-    },
-    "videoUrl": "video.mp4"
+  "nav": {
+    "brand": "DJ HAN ",
+    "subtitle": "DJ • Musician • MC",
+    "btn": "Book Now"
+  },
+  "hero": {
+    "kicker": "Los Angeles • Available for travel to London",
+    "title": "Turn your event into a night they’ll never forget.",
+    "subtitle": "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events. Clean sound. High energy. Crowd-reading mastery.",
+    "btn_primary": "🎧 Book DJ Han",
+    "btn_secondary": "🎶 Watch Live Moments"
+  },
+  "why": {
+    "title": "Why DJ Han",
+    "subtitle": "A premium nightlife feel with professional execution — so your crowd stays locked in from the first song to the last.",
+    "cards": [
+      {
+        "title": "High‑Energy Sets",
+        "desc": "Clean transitions, smart build-ups, and the right songs at the right time.",
+        "icon": "icon_music.svg"
+      },
+      {
+        "title": "Confident MC",
+        "desc": "Clear announcements, smooth flow, and great pacing — without the cringe.",
+        "icon": "icon_mic.svg"
+      },
+      {
+        "title": "Pro Sound",
+        "desc": "Reliable setup, polished audio, and a professional look from setup to teardown.",
+        "icon": "icon_speaker.svg"
+      }
+    ]
+  },
+  "events": {
+    "title": "Events We Rock",
+    "subtitle": "Pick your vibe — we’ll tailor the music and energy to match your crowd.",
+    "list": [
+      {
+        "name": "Weddings",
+        "badge": "Elegant • Hype • Seamless"
+      },
+      {
+        "name": "Bar / Bat Mitzvah",
+        "badge": "Energy • Games • Moments"
+      },
+      {
+        "name": "Private Parties",
+        "badge": "Birthdays • House parties"
+      },
+      {
+        "name": "Corporate Events",
+        "badge": "Upscale • Professional"
+      },
+      {
+        "name": "Community Events",
+        "badge": "Fun • Organized • Clean"
+      },
+      {
+        "name": "Engagements",
+        "badge": "Romantic • Celebration"
+      },
+      {
+        "name": "After Parties",
+        "badge": "Club vibe • Late night"
+      },
+      {
+        "name": "Custom",
+        "badge": "Tell me what you need"
+      }
+    ]
+  },
+  "media": {
+    "title": "Live Moments",
+    "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
+  },
+  "cta": {
+    "title": "Ready to lock in your date?",
+    "badge": "Dates fill fast — secure yours today.",
+    "btn": "📅 Check Availability"
+  },
+  "footer": {
+    "brand": "DJ HAN",
+    "subtitle": "Book for your next event",
+    "contact": "Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan"
+  },
+  "videoUrl": "video.mp4"
 }
