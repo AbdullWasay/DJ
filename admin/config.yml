@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - file: "content/video.json"
+        label: "Homepage Video"
+        name: "video"
+        fields:
+          - { label: "Video URL", name: "videoUrl", widget: "file" }
