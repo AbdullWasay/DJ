@@ -14,6 +14,19 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Move date picker icon to the left */
+    input[name="eventDate"] {
+      position: relative;
+      padding-left: 35px !important;
+    }
+
+    input[name="eventDate"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      left: 5px;
+      cursor: pointer;
+    }
+  </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
@@ -32,138 +45,207 @@
 
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">
-        <div class="logo-box">🎧</div>
+      <a href="#" class="brand" style="text-decoration:none">
+        <div class="logo-box"><img src="assets/logo-without-background.png" alt="DJ HAN Logo"
+            style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
         <div>
           <div id="nav-brand">DJ HAN</div>
           <small id="nav-subtitle">DJ • Musician • MC</small>
         </div>
+      </a>
+
+      <div style="display:flex; align-items:center; gap:20px;">
+        <div class="contact-phone"
+          style="font-weight:700; color:var(--gold); font-size:1.1rem; text-shadow: 0 0 10px rgba(245,180,0,0.5);">
+          <a href="tel:8775875857" style="text-decoration:none; color:inherit;">(877) 587-5857</a>
+        </div>
+        <a id="nav-btn" class="btn btn-primary" href="#book">Book Now</a>
       </div>
-
-      <nav class="nav-links">
-        <a href="#why">Why DJ Han</a>
-        <a href="#events">Events</a>
-        <a href="#media">Live Moments</a>
-        <a href="#book">Book</a>
-      </nav>
-
-      <a id="nav-btn" class="btn btn-primary" href="#book">Book Now</a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div id="hero-kicker" class="kicker">Los Angeles • Available for travel</div>
-        <h1 id="hero-title" class="h1">Turn your event into a night they’ll never forget.</h1>
-        <p id="hero-subtitle" class="sub">
-          Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events.
-          Clean sound. High energy. Crowd-reading mastery.
-        </p>
-        <div class="hero-ctas">
-          <a id="hero-btn-primary" class="btn btn-primary" href="#book">🎧 Book DJ Han</a>
-          <a id="hero-btn-secondary" class="btn btn-outline" href="#media">🎶 Watch Live Moments</a>
-        </div>
+    <div class="container hero-inner"
+      style="text-align:center; display:flex; flex-direction:column; align-items:center; padding-top:40px;">
+      <!-- Spacer to push next content down to lower third -->
+      <div style="margin-top: 45vh;"></div>
 
-        <img class="divider" src="assets/divider.png" alt="divider" />
-        <p class="badge">Tip: Replace the logo placeholder on the right with your DJ Han logo image.</p>
-      </div>
+      <h2 id="hero-title" class="h1"
+        style="font-size: clamp(2.5rem, 5vw, 4.5rem); text-transform:uppercase; letter-spacing:0.02em; margin-bottom:15px;">
+        <span class="text-gradient-gold" style="display:block; line-height:1.2;">Turn Your Event Into A</span>
+        <span class="text-gradient-gold" style="display:block; line-height:1.2;">Night They’ll Never Forget</span>
+      </h2>
 
-      <div class="hero-card">
-        <div class="logo-placeholder">
-          <strong>Drop your DJ Han logo here</strong>
-          <p>Replace this box with your logo image (PNG recommended).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="why" class="section">
-    <div class="container">
-      <h2 id="why-title" class="section-title">Why DJ Han</h2>
-      <p id="why-subtitle" class="section-sub">A premium nightlife feel with professional execution — so your crowd
-        stays locked in from the first song to the last.</p>
-
-      <div id="why-cards" class="grid3">
-        <!-- Cards injected by JS -->
-      </div>
-    </div>
-  </section>
-
-  <section id="events" class="section alt">
-    <div class="container">
-      <h2 id="events-title" class="section-title">Events We Rock</h2>
-      <p id="events-subtitle" class="section-sub">Pick your vibe — we’ll tailor the music and energy to match your
-        crowd.</p>
-
-      <div id="events-list" class="events">
-        <!-- Events injected by JS -->
-      </div>
-    </div>
-  </section>
-
-  <section id="media" class="section">
-    <div class="container">
-      <h2 id="media-title" class="section-title">Live Moments</h2>
-      <p id="media-subtitle" class="section-sub">Swap this video embed with your YouTube / Instagram reel compilation.
+      <p id="hero-subtitle" class="sub"
+        style="font-size:1.1rem; opacity:0.95; max-width:900px; margin-bottom:40px; letter-spacing:0.5px; color: #eee; font-family: Montserrat, sans-serif; font-weight: 500;">
+        Professional DJ <span style="color:#d4af37">•</span> Weddings <span style="color:#d4af37">•</span> Bar/Bat
+        Mitzvahs <span style="color:#d4af37">•</span> Private Events <span style="color:#d4af37">•</span> Corporate
       </p>
 
-      <div class="video">
-        <video id="heroVideo" controls style="width:100%; height:auto; aspect-ratio:16/9; display:block"></video>
+      <div class="hero-ctas" style="justify-content:center; gap:25px;">
+        <a id="hero-btn-primary" class="btn btn-gold-solid" href="#book"
+          style="min-width:240px; font-size: 1.1rem; padding: 16px 20px;">Book Now</a>
+        <a id="hero-btn-secondary" class="btn btn-gold-outline" href="#media"
+          style="min-width:260px; font-size: 1.1rem; padding: 16px 20px;">Watch Live Moments</a>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="cta">
-        <div>
-          <h2 id="cta-title" class="section-title" style="margin:0 0 6px">Ready to lock in your date?</h2>
-          <div id="cta-badge" class="badge">Dates fill fast — secure yours today.</div>
+  <!-- Media Section: Gap Reduced -->
+  <section id="media" class="section" style="padding:0; max-width:100%; overflow:hidden;">
+    <div style="width:100%; padding:0; margin:0;">
+      <div class="media-bg-wrapper"
+        style="position:relative; width:100vw; max-width:100%; margin:0; aspect-ratio: 16/9; background: url('assets/image-2.png') no-repeat center center / 100% 100%;">
+
+        <!-- Header Text -->
+        <div class="section-header-box"
+          style="position:absolute; top:14%; left:5%; width:54%; height:12%; display:flex; align-items:center; justify-content:center;">
+          <h2 id="media-title" class="section-title" style="margin:0; letter-spacing: 2px; text-transform: uppercase; font-size: clamp(1.5rem, 2.5vw, 3.5rem); line-height:1; font-weight:800; 
+                   background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%);
+                   -webkit-background-clip: text; background-clip: text; 
+                   -webkit-text-fill-color: transparent;
+                   filter: drop-shadow(0 2px 5px rgba(255, 215, 0, 0.4)) drop-shadow(0 2px 2px rgba(0,0,0,0.8));">
+            See The Energy. Feel The Moment.
+          </h2>
         </div>
-        <a id="cta-btn" class="btn btn-primary" href="#book">📅 Check Availability</a>
+
+        <!-- Video Player: Moved left and down -->
+        <div class="video-frame"
+          style="position:absolute; top:39%; left:8%; width:50%; height:50%; display:flex; align-items:center; justify-content:center;">
+          <div class="video-container" style="width:92%; height:88%; background:#000; overflow:hidden;">
+            <video id="heroVideo" controls style="width:100%; height:100%; object-fit:cover;"></video>
+          </div>
+        </div>
+
+        <!-- Testimonials: Moved closer to center (Right 8%) -->
+        <div class="testimonials-frame"
+          style="position:absolute; top:10%; right:3%; width:28%; height:82%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+          <h3 class="text-gradient-gold"
+            style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; letter-spacing:1px; line-height:1.2;">VIDEO
+          </h3>
+          <h3 class="text-gradient-gold"
+            style="font-size:clamp(1.3rem, 2.8vw, 3.2rem); margin-bottom:25px; font-weight:700; line-height:1.2;">
+            TESTIMONIALS</h3>
+          <p class="text-gradient-gold"
+            style="letter-spacing:3px; font-size:clamp(1rem, 2vw, 2rem); font-weight:600; margin:0;">COMING
+            SOON</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="book" class="section">
-    <div class="container">
-      <h2 class="section-title">Booking Request</h2>
-      <p class="section-sub">Fill this out and you’ll get a quick reply with availability + a quote.</p>
+  <!-- Contact Section with Image 3 Background -->
+  <section id="book" class="section" style="padding:0; margin-top:-5px;">
+    <div style="width:100%; padding:0; margin:0;">
+      <!-- Wrapper for Image 3 -->
+      <div class="book-bg-wrapper"
+        style="position:relative; width:100vw; margin:0 auto; aspect-ratio: 16/9; background: url('assets/image-3.png') no-repeat center center / 100% 100%; display:flex; justify-content:center;">
 
-      <!-- This form is front-end only. For Wix/Google Sites, connect it to Wix Forms or Google Forms. -->
-      <form class="form" onsubmit="return false;">
-        <input placeholder="Full Name" required />
-        <input placeholder="Phone Number" required />
-        <input placeholder="Email" type="email" required />
-        <select>
-          <option>Event Type</option>
-          <option>Wedding</option>
-          <option>Bar / Bat Mitzvah</option>
-          <option>Private Party</option>
-          <option>Corporate Event</option>
-          <option>Other</option>
-        </select>
-        <input placeholder="Event Date" type="date" />
-        <input placeholder="Venue / City" />
-        <input placeholder="Estimated Guests" />
-        <textarea class="full" placeholder="Tell me about the vibe you want + any must-play songs."></textarea>
-        <button class="btn btn-primary full" style="width:100%;border:0;cursor:pointer">🚀 Request Booking</button>
-      </form>
+        <!-- Section Heading -->
+        <div style="position:absolute; top:6%; left:50%; transform:translateX(-50%); text-align:center; width:90%;">
+          <h2 class="section-title" style="margin:0; letter-spacing: 2px; text-transform: uppercase; font-size: clamp(2rem, 4vw, 4.5rem); line-height:1.2; font-weight:800; 
+                   background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%);
+                   -webkit-background-clip: text; background-clip: text; 
+                   -webkit-text-fill-color: transparent;
+                   filter: drop-shadow(0 2px 5px rgba(255, 215, 0, 0.4)) drop-shadow(0 2px 2px rgba(0,0,0,0.8));">
+            Ready to lock in your date?
+          </h2>
+        </div>
+
+        <form method="POST" action="#" style="width:100%; height:100%; position:relative;">
+
+          <!-- Row 1: Name & Phone (Approx Top 27%) -->
+          <label
+            style="position:absolute; top:24%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">NAME</label>
+          <input name="name" required
+            style="position:absolute; top:28%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <label
+            style="position:absolute; top:24%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">PHONE</label>
+          <input name="phone" required
+            style="position:absolute; top:28%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <!-- Row 2: Email & Event Type (Approx Top 41%) -->
+          <label
+            style="position:absolute; top:36%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EMAIL</label>
+          <input name="email" type="email" required
+            style="position:absolute; top:40%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <label
+            style="position:absolute; top:36%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EVENT
+            TYPE</label>
+          <input name="eventType"
+            style="position:absolute; top:40%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <!-- Row 3: Event Date & Venue (Approx Top 55%) -->
+          <label
+            style="position:absolute; top:47%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EVENT
+            DATE</label>
+          <input name="eventDate" onfocus="(this.type='date')" onblur="(this.type='text')"
+            style="position:absolute; top:51%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <label
+            style="position:absolute; top:47%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">VENUE
+            LOCATION</label>
+          <input name="location"
+            style="position:absolute; top:51%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <!-- Row 4: Guest Count (Small) & Message (Large) (Approx Top 69%) -->
+          <label
+            style="position:absolute; top:59%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">ESTIMATED
+            GUESTS</label>
+          <input name="guestCount"
+            style="position:absolute; top:63%; left:15%; width:21%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
+
+          <label
+            style="position:absolute; top:59%; left:38.5%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
+                        background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">MESSAGE</label>
+          <input name="message"
+            style="position:absolute; top:63%; left:38.5%; width:50%; height:10%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px; padding-top:10px;" />
+
+          <!-- Button Row (Approx Bottom 10%) -->
+          <button type="submit"
+            style="position:absolute; bottom:15.5%; left:51%; transform:translateX(-50%); width:40%; height:10%; background:transparent; border:none; cursor:pointer; color:transparent;">
+            Submit
+          </button>
+          <!-- Overlay Text for Button to ensure visibility -->
+          <div
+            style="position:absolute; bottom:15.5%; left:51%; transform:translateX(-50%); width:40%; height:10%; display:flex; align-items:center; justify-content:center; pointer-events:none;">
+            <span
+              style="font-family:Oswald; font-size:clamp(1.5rem, 2.5vw, 2.5rem); letter-spacing:2px; font-weight:bold; text-transform:uppercase; color:#000;">REQUEST
+              BOOKING</span>
+          </div>
+
+        </form>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container footer-inner">
       <div class="brand">
-        <div class="logo-box">🎧</div>
+        <div class="logo-box"><img src="assets/logo-without-background.png" alt="DJ HAN Logo"
+            style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
         <div>
           <div id="footer-brand">DJ HAN</div>
           <small id="footer-subtitle">Book for your next event</small>
         </div>
 
       </div>
-      <div id="footer-contact" class="badge">Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan</div>
+      <div>
+        <div id="footer-contact" class="badge">Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com
+        </div>
+        <div class="badge" style="margin-top:6px; font-size: 0.85rem; text-align: right;">
+          <a href="privacy.html" style="text-decoration:none; opacity:0.8;">Privacy Policy & SMS Terms</a>
+        </div>
+      </div>
     </div>
   </footer>
 

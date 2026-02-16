@@ -97,6 +97,17 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-               - { label: "Brand Name", name: "brand", widget: "string", default: "DJ HAN" }
-               - { label: "Subtitle", name: "subtitle", widget: "string", default: "Book for your next event" }
-               - { label: "Contact Info Line", name: "contact", widget: "string", default: "Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan" }
+                - { label: "Brand Name", name: "brand", widget: "string", default: "DJ HAN" }
+                - { label: "Subtitle", name: "subtitle", widget: "string", default: "Book for your next event" }
+                - { label: "Contact Info Line", name: "contact", widget: "string", default: "Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com" }
+
+          - label: "Privacy Page"
+            name: "privacy"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Page Title", name: "title", widget: "string", default: "Privacy Policy" }
+              - { label: "Effective Date", name: "effectiveDate", widget: "string", default: "01/01/2026" }
+              - { label: "Contact Email", name: "contactEmail", widget: "string", default: "your@email.com" }
+              - { label: "Contact Phone", name: "contactPhone", widget: "string", default: "(877) 587-5857" }
+              - { label: "Website URL", name: "websiteUrl", widget: "string", default: "www.hananelmusic.com" }

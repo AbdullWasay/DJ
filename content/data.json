@@ -1,8 +1,8 @@
 {
   "nav": {
-    "brand": "DJ HAN ",
-    "subtitle": "DJ • Musician • MC - updated",
-    "btn": "Register Now"
+    "brand": "DJ HAN",
+    "subtitle": "DJ • Musician • MC",
+    "btn": "Book Now"
   },
   "hero": {
     "kicker": "Los Angeles • Available for travel to London",
@@ -71,7 +71,7 @@
     ]
   },
   "media": {
-    "title": "Live Moments",
+    "title": "See The Energy. Feel The Moment.",
     "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
   },
   "cta": {
@@ -82,7 +82,14 @@
   "footer": {
     "brand": "DJ HAN",
     "subtitle": "Book for your next event",
-    "contact": "Email: your@email.com • Phone: (XXX) XXX‑XXXX • Instagram: @djhan"
+    "contact": "Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com"
   },
-  "videoUrl": "video.mp4"
+  "videoUrl": "content/video.mp4",
+  "privacy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "01/01/2026",
+    "contactEmail": "your@email.com",
+    "contactPhone": "(877) 587-5857",
+    "websiteUrl": "www.hananelmusic.com"
+  }
 }
