@@ -57,7 +57,7 @@
       <div style="display:flex; align-items:center; gap:20px;">
         <div class="contact-phone"
           style="font-weight:700; color:var(--gold); font-size:1.1rem; text-shadow: 0 0 10px rgba(245,180,0,0.5);">
-          <a href="tel:8775875857" style="text-decoration:none; color:inherit;">(877) 587-5857</a>
+          <a id="nav-phone" href="tel:8775875857" style="text-decoration:none; color:inherit;">(877) 587-5857</a>
         </div>
         <a id="nav-btn" class="btn btn-primary" href="#book">Book Now</a>
       </div>
@@ -120,13 +120,11 @@
         <!-- Testimonials: Moved closer to center (Right 8%) -->
         <div class="testimonials-frame"
           style="position:absolute; top:10%; right:3%; width:28%; height:82%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
-          <h3 class="text-gradient-gold"
+          <h3 id="testimonials-title" class="text-gradient-gold"
             style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; letter-spacing:1px; line-height:1.2;">VIDEO
+            TESTIMONIALS
           </h3>
-          <h3 class="text-gradient-gold"
-            style="font-size:clamp(1.3rem, 2.8vw, 3.2rem); margin-bottom:25px; font-weight:700; line-height:1.2;">
-            TESTIMONIALS</h3>
-          <p class="text-gradient-gold"
+          <p id="testimonials-status" class="text-gradient-gold"
             style="letter-spacing:3px; font-size:clamp(1rem, 2vw, 2rem); font-weight:600; margin:0;">COMING
             SOON</p>
         </div>
@@ -143,7 +141,7 @@
 
         <!-- Section Heading -->
         <div style="position:absolute; top:6%; left:50%; transform:translateX(-50%); text-align:center; width:90%;">
-          <h2 class="section-title" style="margin:0; letter-spacing: 2px; text-transform: uppercase; font-size: clamp(2rem, 4vw, 4.5rem); line-height:1.2; font-weight:800; 
+          <h2 id="cta-title" class="section-title" style="margin:0; letter-spacing: 2px; text-transform: uppercase; font-size: clamp(2rem, 4vw, 4.5rem); line-height:1.2; font-weight:800; 
                    background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%);
                    -webkit-background-clip: text; background-clip: text; 
                    -webkit-text-fill-color: transparent;
@@ -218,7 +216,7 @@
           <!-- Overlay Text for Button to ensure visibility -->
           <div
             style="position:absolute; bottom:15.5%; left:51%; transform:translateX(-50%); width:40%; height:10%; display:flex; align-items:center; justify-content:center; pointer-events:none;">
-            <span
+            <span id="cta-btn"
               style="font-family:Oswald; font-size:clamp(1.5rem, 2.5vw, 2.5rem); letter-spacing:2px; font-weight:bold; text-transform:uppercase; color:#000;">REQUEST
               BOOKING</span>
           </div>
@@ -264,6 +262,11 @@
           safeSetText('nav-brand', data.nav.brand);
           safeSetText('nav-subtitle', data.nav.subtitle);
           safeSetText('nav-btn', data.nav.btn);
+          const navPhone = document.getElementById('nav-phone');
+          if (navPhone && data.nav.phone) {
+            navPhone.textContent = data.nav.phone;
+            navPhone.href = `tel:${data.nav.phone.replace(/\D/g, '')}`;
+          }
         }
 
         // Hero
@@ -280,46 +283,16 @@
           document.getElementById('heroVideo').src = data.videoUrl;
         }
 
-        // Why Section
-        if (data.why) {
-          safeSetText('why-title', data.why.title);
-          safeSetText('why-subtitle', data.why.subtitle);
-
-          if (data.why.cards && Array.isArray(data.why.cards)) {
-            const container = document.getElementById('why-cards');
-            container.innerHTML = data.why.cards.map(card => `
-            <div class="card">
-              <div class="icon"><img src="assets/${card.icon || 'icon_music.svg'}" width="28" height="28" alt=""></div>
-              <h3>${card.title}</h3>
-              <p>${card.desc}</p>
-            </div>
-          `).join('');
-          }
-        }
-
-        // Events Section
-        if (data.events) {
-          safeSetText('events-title', data.events.title);
-          safeSetText('events-subtitle', data.events.subtitle);
-
-          if (data.events.list && Array.isArray(data.events.list)) {
-            const container = document.getElementById('events-list');
-            container.innerHTML = data.events.list.map(evt => `
-            <div class="event"><strong>${evt.name}</strong><div class="badge">${evt.badge}</div></div>
-          `).join('');
-          }
-        }
-
         // Media
         if (data.media) {
           safeSetText('media-title', data.media.title);
-          safeSetText('media-subtitle', data.media.subtitle);
+          safeSetText('testimonials-title', data.media.testimonials_title);
+          safeSetText('testimonials-status', data.media.testimonials_subtitle);
         }
 
         // CTA
         if (data.cta) {
           safeSetText('cta-title', data.cta.title);
-          safeSetText('cta-badge', data.cta.badge);
           safeSetText('cta-btn', data.cta.btn);
         }
 

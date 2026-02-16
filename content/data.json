@@ -2,83 +2,8 @@
   "nav": {
     "brand": "DJ HAN",
     "subtitle": "DJ • Musician • MC",
-    "btn": "Book Now"
-  },
-  "media": {
-    "title": "See The Energy. Feel The Moment.",
-    "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "effectiveDate": "01/01/2026",
-    "contactEmail": "your@email.com",
-    "contactPhone": "(877) 587-5857",
-    "websiteUrl": "www.hananelmusic.com"
-  },
-  "why": {
-    "title": "Why DJ Han",
-    "subtitle": "A premium nightlife feel with professional execution — so your crowd stays locked in from the first song to the last.",
-    "cards": [
-      {
-        "title": "High‑Energy Sets",
-        "desc": "Clean transitions, smart build-ups, and the right songs at the right time.",
-        "icon": "icon_music.svg"
-      },
-      {
-        "title": "Confident MC",
-        "desc": "Clear announcements, smooth flow, and great pacing — without the cringe.",
-        "icon": "icon_mic.svg"
-      },
-      {
-        "title": "Pro Sound",
-        "desc": "Reliable setup, polished audio, and a professional look from setup to teardown.",
-        "icon": "icon_speaker.svg"
-      }
-    ]
-  },
-  "cta": {
-    "title": "Ready to lock in your date?",
-    "badge": "Dates fill fast — secure yours today.",
-    "btn": "📅 Check Availability"
-  },
-  "videoUrl": "/assets/uploads/3129-166335878_tiny.mp4",
-  "events": {
-    "title": "Events We Rock",
-    "subtitle": "Pick your vibe — we’ll tailor the music and energy to match your crowd.",
-    "list": [
-      {
-        "name": "Weddings",
-        "badge": "Elegant • Hype • Seamless"
-      },
-      {
-        "name": "Bar / Bat Mitzvah",
-        "badge": "Energy • Games • Moments"
-      },
-      {
-        "name": "Private Parties",
-        "badge": "Birthdays • House parties"
-      },
-      {
-        "name": "Corporate Events",
-        "badge": "Upscale • Professional"
-      },
-      {
-        "name": "Community Events",
-        "badge": "Fun • Organized • Clean"
-      },
-      {
-        "name": "Engagements",
-        "badge": "Romantic • Celebration"
-      },
-      {
-        "name": "After Parties",
-        "badge": "Club vibe • Late night"
-      },
-      {
-        "name": "Custom",
-        "badge": "Tell me what you need"
-      }
-    ]
+    "btn": "Book Now",
+    "phone": "(877) 587-5857"
   },
   "hero": {
     "kicker": "Los Angeles • Available for travel to London",
@@ -87,9 +12,27 @@
     "btn_primary": "🎧 Book DJ Han",
     "btn_secondary": "🎶 Watch Live Moments"
   },
+  "media": {
+    "title": "See The Energy. Feel The Moment.",
+    "testimonials_title": "Video Testimonials",
+    "testimonials_subtitle": "COMING SOON"
+  },
+  "cta": {
+    "title": "Ready to lock in your date?",
+    "btn": "REQUEST BOOKING"
+  },
   "footer": {
     "brand": "DJ HAN",
     "subtitle": "Book for your next event",
-    "contact": "Phone: (877) 587-5857 • Web: www.hananelmusic.com"
+    "contact": "Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com"
+  },
+  "videoUrl": "/assets/uploads/3129-166335878_tiny.mp4",
+  "privacy": {
+    "title": "Privacy Policy & SMS Terms",
+    "effectiveDate": "01/01/2026",
+    "body": "<h2>1. Information We Collect</h2><p>We may collect the following information when you contact us:</p><ul><li>Name</li><li>Phone number</li><li>Event details (date, location, type of event)</li></ul><h2>2. How We Use Your Information</h2><p>We use your information solely to:</p><ul><li>Communicate about booking DJ services</li><li>Confirm event dates and details</li><li>Respond to service inquiries</li><li>Provide customer support</li></ul><p>We do <strong>NOT</strong> use SMS for marketing or promotional campaigns.</p><h2>3. SMS Communications & Consent</h2><p>By providing your phone number, you consent to receive SMS messages related to:</p><ul><li>Booking confirmations</li><li>Event coordination</li><li>Service-related questions</li></ul><h3>SMS consent is obtained verbally.</h3><p>When a customer contacts us or books our services, we verbally ask for permission to communicate via SMS regarding their event.</p><h3>Example verbal consent language:</h3><p>“Do you agree to receive text messages from us regarding your DJ booking and event details? Message and data rates may apply. You can reply STOP at any time to opt out.”</p><h2>4. No Marketing or Third-Party Sharing</h2><p>We do <strong>NOT</strong>:</p><ul><li>Send marketing or promotional text messages</li><li>Sell, rent, or share your personal information with third parties</li><li>Share SMS consent with third parties for marketing purposes</li></ul><p>Your information is used strictly for service-related communication.</p><h2>5. Data Security</h2><p>We take reasonable measures to protect your information from unauthorized access or disclosure.</p><h2>6. Opt-Out</h2><p>You may opt out of SMS communications at any time by replying: <strong>STOP</strong></p><p>For help, reply: <strong>HELP</strong></p><h2>7. Contact Information</h2><p>Phone: (877) 587-5857<br>Website: www.hananelmusic.com</p><hr><h1>SMS Terms & Conditions</h1><p>By providing your phone number and verbally consenting, you agree to receive SMS messages from DJ HAN.</p><h2>Types of Messages You May Receive:</h2><ul><li>Booking confirmations</li><li>Event reminders</li><li>Event coordination messages</li><li>Equipment rental confirmations</li><li>Service-related updates</li></ul><p>Messaging frequency may vary depending on your event and communication needs.</p><p>Message and data rates may apply.</p><p>To opt out at any time, text: <strong>STOP</strong></p><p>For assistance, text: <strong>HELP</strong> or visit our website at www.hananelmusic.com.</p><p>We do not send marketing messages and do not share your information with third parties.</p>",
+    "contactEmail": "your@email.com",
+    "contactPhone": "(877) 587-5857",
+    "websiteUrl": "www.hananelmusic.com"
   }
 }
