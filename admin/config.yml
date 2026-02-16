@@ -73,7 +73,7 @@ collections:
             fields:
               - { label: "Page Title", name: "title", widget: "string" }
               - { label: "Effective Date", name: "effectiveDate", widget: "string" }
-              - { label: "Policy Content (HTML Allowed)", name: "body", widget: "code", default_language: "html" }
+              - { label: "Policy Content (HTML Allowed)", name: "body", widget: "markdown" }
               - { label: "Contact Email", name: "contactEmail", widget: "string" }
               - { label: "Contact Phone", name: "contactPhone", widget: "string" }
               - { label: "Website URL", name: "websiteUrl", widget: "string" }
