@@ -36,7 +36,7 @@ collections:
             fields:
               - { label: "Top Kicker", name: "kicker", widget: "string" }
               - { label: "Main Title", name: "title", widget: "string" }
-              - { label: "Description", name: "text", name: "subtitle", widget: "text" }
+              - { label: "Description", name: "subtitle", widget: "text" }
               - { label: "Primary Button", name: "btn_primary", widget: "string" }
               - { label: "Secondary Button", name: "btn_secondary", widget: "string" }
 
