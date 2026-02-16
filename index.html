@@ -153,26 +153,26 @@
         <form method="POST" action="#" style="width:100%; height:100%; position:relative;">
 
           <!-- Row 1: Name & Phone (Approx Top 27%) -->
-          <label
+          <label id="label-name"
             style="position:absolute; top:24%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">NAME</label>
           <input name="name" required
             style="position:absolute; top:28%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
-          <label
+          <label id="label-phone"
             style="position:absolute; top:24%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">PHONE</label>
           <input name="phone" required
             style="position:absolute; top:28%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
           <!-- Row 2: Email & Event Type (Approx Top 41%) -->
-          <label
+          <label id="label-email"
             style="position:absolute; top:36%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EMAIL</label>
           <input name="email" type="email" required
             style="position:absolute; top:40%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
-          <label
+          <label id="label-type"
             style="position:absolute; top:36%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EVENT
             TYPE</label>
@@ -180,14 +180,14 @@
             style="position:absolute; top:40%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
           <!-- Row 3: Event Date & Venue (Approx Top 55%) -->
-          <label
+          <label id="label-date"
             style="position:absolute; top:47%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">EVENT
             DATE</label>
           <input name="eventDate" onfocus="(this.type='date')" onblur="(this.type='text')"
             style="position:absolute; top:51%; left:15%; width:35%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
-          <label
+          <label id="label-location"
             style="position:absolute; top:47%; left:52%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">VENUE
             LOCATION</label>
@@ -195,14 +195,14 @@
             style="position:absolute; top:51%; left:52%; width:36.5%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
           <!-- Row 4: Guest Count (Small) & Message (Large) (Approx Top 69%) -->
-          <label
+          <label id="label-guests"
             style="position:absolute; top:59%; left:15%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">ESTIMATED
             GUESTS</label>
           <input name="guestCount"
             style="position:absolute; top:63%; left:15%; width:21%; height:6%; background:transparent; border:none; color:#e6b422; font-family:Oswald; font-size:clamp(0.8rem, 1.5vw, 1.5rem); letter-spacing:1px; outline:none; padding-left:10px;" />
 
-          <label
+          <label id="label-message"
             style="position:absolute; top:59%; left:38.5%; font-family:Oswald; font-size:clamp(0.7rem, 1.2vw, 1.2rem); letter-spacing:1px; font-weight:600;
                         background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">MESSAGE</label>
           <input name="message"
@@ -271,7 +271,6 @@
 
         // Hero
         if (data.hero) {
-          safeSetText('hero-kicker', data.hero.kicker);
           safeSetText('hero-title', data.hero.title);
           safeSetText('hero-subtitle', data.hero.subtitle);
           safeSetText('hero-btn-primary', data.hero.btn_primary);
@@ -294,6 +293,16 @@
         if (data.cta) {
           safeSetText('cta-title', data.cta.title);
           safeSetText('cta-btn', data.cta.btn);
+          if (data.cta.labels) {
+            safeSetText('label-name', data.cta.labels.name);
+            safeSetText('label-phone', data.cta.labels.phone);
+            safeSetText('label-email', data.cta.labels.email);
+            safeSetText('label-type', data.cta.labels.type);
+            safeSetText('label-date', data.cta.labels.date);
+            safeSetText('label-location', data.cta.labels.location);
+            safeSetText('label-guests', data.cta.labels.guests);
+            safeSetText('label-message', data.cta.labels.message);
+          }
         }
 
         // Footer

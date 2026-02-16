@@ -6,7 +6,6 @@
     "phone": "(877) 587-5857"
   },
   "hero": {
-    "kicker": "Los Angeles • Available for travel to London",
     "title": "Turn your event into a night they’ll never forget.",
     "subtitle": "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events. Clean sound. High energy. Crowd-reading mastery.",
     "btn_primary": "🎧 Book DJ Han",
@@ -19,7 +18,17 @@
   },
   "cta": {
     "title": "Ready to lock in your date?",
-    "btn": "REQUEST BOOKING"
+    "btn": "REQUEST BOOKING",
+    "labels": {
+      "name": "NAME",
+      "phone": "PHONE",
+      "email": "EMAIL",
+      "type": "EVENT TYPE",
+      "date": "EVENT DATE",
+      "location": "VENUE LOCATION",
+      "guests": "ESTIMATED GUESTS",
+      "message": "MESSAGE"
+    }
   },
   "footer": {
     "brand": "DJ HAN",
@@ -30,7 +39,7 @@
   "privacy": {
     "title": "Privacy Policy & SMS Terms",
     "effectiveDate": "01/01/2026",
-    "body": "<h2>1. Information We Collect</h2><p>We may collect the following information when you contact us:</p><ul><li>Name</li><li>Phone number</li><li>Event details (date, location, type of event)</li></ul><h2>2. How We Use Your Information</h2><p>We use your information solely to:</p><ul><li>Communicate about booking DJ services</li><li>Confirm event dates and details</li><li>Respond to service inquiries</li><li>Provide customer support</li></ul><p>We do <strong>NOT</strong> use SMS for marketing or promotional campaigns.</p><h2>3. SMS Communications & Consent</h2><p>By providing your phone number, you consent to receive SMS messages related to:</p><ul><li>Booking confirmations</li><li>Event coordination</li><li>Service-related questions</li></ul><h3>SMS consent is obtained verbally.</h3><p>When a customer contacts us or books our services, we verbally ask for permission to communicate via SMS regarding their event.</p><h3>Example verbal consent language:</h3><p>“Do you agree to receive text messages from us regarding your DJ booking and event details? Message and data rates may apply. You can reply STOP at any time to opt out.”</p><h2>4. No Marketing or Third-Party Sharing</h2><p>We do <strong>NOT</strong>:</p><ul><li>Send marketing or promotional text messages</li><li>Sell, rent, or share your personal information with third parties</li><li>Share SMS consent with third parties for marketing purposes</li></ul><p>Your information is used strictly for service-related communication.</p><h2>5. Data Security</h2><p>We take reasonable measures to protect your information from unauthorized access or disclosure.</p><h2>6. Opt-Out</h2><p>You may opt out of SMS communications at any time by replying: <strong>STOP</strong></p><p>For help, reply: <strong>HELP</strong></p><h2>7. Contact Information</h2><p>Phone: (877) 587-5857<br>Website: www.hananelmusic.com</p><hr><h1>SMS Terms & Conditions</h1><p>By providing your phone number and verbally consenting, you agree to receive SMS messages from DJ HAN.</p><h2>Types of Messages You May Receive:</h2><ul><li>Booking confirmations</li><li>Event reminders</li><li>Event coordination messages</li><li>Equipment rental confirmations</li><li>Service-related updates</li></ul><p>Messaging frequency may vary depending on your event and communication needs.</p><p>Message and data rates may apply.</p><p>To opt out at any time, text: <strong>STOP</strong></p><p>For assistance, text: <strong>HELP</strong> or visit our website at www.hananelmusic.com.</p><p>We do not send marketing messages and do not share your information with third parties.</p>",
+    "body": "## 1. Information We Collect\n\nWe may collect the following information when you contact us:\n\n*   Name\n*   Phone number\n*   Event details (date, location, type of event)\n\n## 2. How We Use Your Information\n\nWe use your information solely to:\n\n*   Communicate about booking DJ services\n*   Confirm event dates and details\n*   Respond to service inquiries\n*   Provide customer support\n\nWe do **NOT** use SMS for marketing or promotional campaigns.\n\n## 3. SMS Communications & Consent\n\nBy providing your phone number, you consent to receive SMS messages related to:\n\n*   Booking confirmations\n*   Event coordination\n*   Service-related questions\n\n### SMS consent is obtained verbally.\n\nWhen a customer contacts us or books our services, we verbally ask for permission to communicate via SMS regarding their event.\n\n### Example verbal consent language:\n\n“Do you agree to receive text messages from us regarding your DJ booking and event details? Message and data rates may apply. You can reply STOP at any time to opt out.”\n\n## 4. No Marketing or Third-Party Sharing\n\nWe do **NOT**:\n\n*   Send marketing or promotional text messages\n*   Sell, rent, or share your personal information with third parties\n*   Share SMS consent with third parties for marketing purposes\n\nYour information is used strictly for service-related communication.\n\n## 5. Data Security\n\nWe take reasonable measures to protect your information from unauthorized access or disclosure.\n\n## 6. Opt-Out\n\nYou may opt out of SMS communications at any time by replying: **STOP**\n\nFor help, reply: **HELP**\n\n## 7. Contact Information\n\nPhone: (877) 587-5857\n\nWebsite: www.hananelmusic.com\n\n***\n\n# SMS Terms & Conditions\n\nBy providing your phone number and verbally consenting, you agree to receive SMS messages from DJ HAN.\n\n## Types of Messages You May Receive:\n\n*   Booking confirmations\n*   Event reminders\n*   Event coordination messages\n*   Equipment rental confirmations\n*   Service-related updates\n\nMessaging frequency may vary depending on your event and communication needs.\n\nMessage and data rates may apply.\n\nTo opt out at any time, text: **STOP**\n\nFor assistance, text: **HELP** or visit our website at www.hananelmusic.com.\n\nWe do not send marketing messages and do not share your information with third parties.",
     "contactEmail": "your@email.com",
     "contactPhone": "(877) 587-5857",
     "websiteUrl": "www.hananelmusic.com"

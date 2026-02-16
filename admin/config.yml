@@ -34,7 +34,6 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - { label: "Top Kicker", name: "kicker", widget: "string" }
               - { label: "Main Title", name: "title", widget: "string" }
               - { label: "Description", name: "subtitle", widget: "text" }
               - { label: "Primary Button", name: "btn_primary", widget: "string" }
@@ -56,6 +55,18 @@ collections:
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - { label: "Submit Button Text", name: "btn", widget: "string" }
+              - label: "Form Labels"
+                name: "labels"
+                widget: "object"
+                fields:
+                  - { label: "Name Label", name: "name", widget: "string", default: "NAME" }
+                  - { label: "Phone Label", name: "phone", widget: "string", default: "PHONE" }
+                  - { label: "Email Label", name: "email", widget: "string", default: "EMAIL" }
+                  - { label: "Event Type Label", name: "type", widget: "string", default: "EVENT TYPE" }
+                  - { label: "Event Date Label", name: "date", widget: "string", default: "EVENT DATE" }
+                  - { label: "Location Label", name: "location", widget: "string", default: "VENUE LOCATION" }
+                  - { label: "Guests Label", name: "guests", widget: "string", default: "ESTIMATED GUESTS" }
+                  - { label: "Message Label", name: "message", widget: "string", default: "MESSAGE" }
 
           - label: "Footer"
             name: "footer"

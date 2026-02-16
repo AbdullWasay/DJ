@@ -45,6 +45,8 @@
             margin-bottom: 0.5rem;
         }
     </style>
+    <!-- Simple Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -124,7 +126,7 @@
                     safeSetText('privacy-effective-date', data.privacy.effectiveDate);
                     const bodyEl = document.getElementById('privacy-body');
                     if (bodyEl && data.privacy.body) {
-                        bodyEl.innerHTML = data.privacy.body;
+                        bodyEl.innerHTML = marked.parse(data.privacy.body);
                     }
                 }
             })
