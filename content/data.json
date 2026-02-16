@@ -4,12 +4,16 @@
     "subtitle": "DJ • Musician • MC",
     "btn": "Book Now"
   },
-  "hero": {
-    "kicker": "Los Angeles • Available for travel to London",
-    "title": "Turn your event into a night they’ll never forget.",
-    "subtitle": "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events. Clean sound. High energy. Crowd-reading mastery.",
-    "btn_primary": "🎧 Book DJ Han",
-    "btn_secondary": "🎶 Watch Live Moments"
+  "media": {
+    "title": "See The Energy. Feel The Moment.",
+    "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "01/01/2026",
+    "contactEmail": "your@email.com",
+    "contactPhone": "(877) 587-5857",
+    "websiteUrl": "www.hananelmusic.com"
   },
   "why": {
     "title": "Why DJ Han",
@@ -32,6 +36,12 @@
       }
     ]
   },
+  "cta": {
+    "title": "Ready to lock in your date?",
+    "badge": "Dates fill fast — secure yours today.",
+    "btn": "📅 Check Availability"
+  },
+  "videoUrl": "/assets/uploads/3129-166335878_tiny.mp4",
   "events": {
     "title": "Events We Rock",
     "subtitle": "Pick your vibe — we’ll tailor the music and energy to match your crowd.",
@@ -70,26 +80,16 @@
       }
     ]
   },
-  "media": {
-    "title": "See The Energy. Feel The Moment.",
-    "subtitle": "Swap this video embed with your YouTube / Instagram reel compilation."
-  },
-  "cta": {
-    "title": "Ready to lock in your date?",
-    "badge": "Dates fill fast — secure yours today.",
-    "btn": "📅 Check Availability"
+  "hero": {
+    "kicker": "Los Angeles • Available for travel to London",
+    "title": "Turn your event into a night they’ll never forget.",
+    "subtitle": "Premium DJ + MC experience for weddings, bar/bat mitzvahs, private parties, and corporate events. Clean sound. High energy. Crowd-reading mastery.",
+    "btn_primary": "🎧 Book DJ Han",
+    "btn_secondary": "🎶 Watch Live Moments"
   },
   "footer": {
     "brand": "DJ HAN",
     "subtitle": "Book for your next event",
-    "contact": "Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com"
-  },
-  "videoUrl": "content/video.mp4",
-  "privacy": {
-    "title": "Privacy Policy",
-    "effectiveDate": "01/01/2026",
-    "contactEmail": "your@email.com",
-    "contactPhone": "(877) 587-5857",
-    "websiteUrl": "www.hananelmusic.com"
+    "contact": "Phone: (877) 587-5857 • Web: www.hananelmusic.com"
   }
 }
