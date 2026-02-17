@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=1200" />
   <title>DJ Han — Book DJ & MC</title>
 
   <!-- Fonts (Google Fonts). If embedding in Wix/Google Sites, these usually work as-is. -->
@@ -68,7 +68,7 @@
     <div class="container hero-inner"
       style="text-align:center; display:flex; flex-direction:column; align-items:center; padding-top:40px;">
       <!-- Spacer to push next content down to lower third -->
-      <div style="margin-top: 45vh;"></div>
+      <div style="margin-top: 450px;"></div>
 
       <h2 id="hero-title" class="h1"
         style="font-size: clamp(2.5rem, 5vw, 4.5rem); text-transform:uppercase; letter-spacing:0.02em; margin-bottom:15px;">
@@ -82,11 +82,9 @@
         Mitzvahs <span style="color:#d4af37">•</span> Private Events <span style="color:#d4af37">•</span> Corporate
       </p>
 
-      <div class="hero-ctas" style="justify-content:center; gap:25px;">
+      <div class="hero-ctas" style="justify-content:center;">
         <a id="hero-btn-primary" class="btn btn-gold-solid" href="#book"
           style="min-width:240px; font-size: 1.1rem; padding: 16px 20px;">Book Now</a>
-        <a id="hero-btn-secondary" class="btn btn-gold-outline" href="#media"
-          style="min-width:260px; font-size: 1.1rem; padding: 16px 20px;">Watch Live Moments</a>
       </div>
     </div>
   </section>
@@ -95,7 +93,7 @@
   <section id="media" class="section" style="padding:0; max-width:100%; overflow:hidden;">
     <div style="width:100%; padding:0; margin:0;">
       <div class="media-bg-wrapper"
-        style="position:relative; width:100vw; max-width:100%; margin:0; aspect-ratio: 16/9; background: url('assets/image-2.png') no-repeat center center / 100% 100%;">
+        style="position:relative; width:100%; max-width:100%; margin:0; aspect-ratio: 16/9; background: url('assets/image-2.png') no-repeat center center / 100% 100%;">
 
         <!-- Header Text -->
         <div class="section-header-box"
@@ -121,7 +119,8 @@
         <div class="testimonials-frame"
           style="position:absolute; top:10%; right:3%; width:28%; height:82%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
           <h3 id="testimonials-title" class="text-gradient-gold"
-            style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; letter-spacing:1px; line-height:1.2;">VIDEO
+            style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; letter-spacing:1px; line-height:1.2;">
+            VIDEO
             TESTIMONIALS
           </h3>
           <p id="testimonials-status" class="text-gradient-gold"
@@ -137,7 +136,7 @@
     <div style="width:100%; padding:0; margin:0;">
       <!-- Wrapper for Image 3 -->
       <div class="book-bg-wrapper"
-        style="position:relative; width:100vw; margin:0 auto; aspect-ratio: 16/9; background: url('assets/image-3.png') no-repeat center center / 100% 100%; display:flex; justify-content:center;">
+        style="position:relative; width:100%; margin:0 auto; aspect-ratio: 16/9; background: url('assets/image-3.png') no-repeat center center / 100% 100%; display:flex; justify-content:center;">
 
         <!-- Section Heading -->
         <div style="position:absolute; top:6%; left:50%; transform:translateX(-50%); text-align:center; width:90%;">
@@ -238,7 +237,8 @@
 
       </div>
       <div>
-        <div id="footer-contact" class="badge">Email: your@email.com • Phone: (877) 587-5857 • Web: www.hananelmusic.com
+        <div id="footer-contact" class="badge">Email: your@email.com • Phone: (877) 587-5857 • Web:
+          www.hananelmusic.com
         </div>
         <div class="badge" style="margin-top:6px; font-size: 0.85rem; text-align: right;">
           <a href="privacy.html" style="text-decoration:none; opacity:0.8;">Privacy Policy & SMS Terms</a>
@@ -312,10 +312,32 @@
           safeSetText('footer-contact', data.footer.contact);
         }
 
+        // Re-apply scalability after content is injected
+        if (typeof applyScalability === 'function') applyScalability();
+
       })
       .catch(err => console.error('Error loading content:', err));
   </script>
 
+  <script>
+    function applyScalability() {
+      const targetWidth = 1200;
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < targetWidth) {
+        const scale = screenWidth / targetWidth;
+        document.body.style.zoom = scale;
+        document.body.style.width = targetWidth + 'px';
+      } else {
+        document.body.style.zoom = 1;
+        document.body.style.width = '100%';
+      }
+    }
+    window.addEventListener('resize', applyScalability);
+    applyScalability();
+    setTimeout(applyScalability, 100);
+    setTimeout(applyScalability, 1000);
+  </script>
 </body>
 
 </html>

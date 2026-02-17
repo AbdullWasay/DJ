@@ -21,7 +21,9 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif
+  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -235,20 +237,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-/* Video Grid split */
-@media (max-width: 900px) {
-  .grid-split-media {
-    grid-template-columns: 1fr !important;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
+/* No media queries here to maintain desktop view */
 
 /* Inputs */
 input,
