@@ -36,8 +36,7 @@ collections:
             fields:
               - { label: "Main Title", name: "title", widget: "string" }
               - { label: "Description", name: "subtitle", widget: "text" }
-              - { label: "Primary Button", name: "btn_primary", widget: "string" }
-              - { label: "Secondary Button", name: "btn_secondary", widget: "string" }
+
 
           - label: "Live Moments (Video Section)"
             name: "media"

@@ -155,26 +155,7 @@ a {
   display: inline-block;
 }
 
-.btn-gold-transparent {
-  background: transparent;
-  color: #000000 !important;
-  border: none;
-  font-family: Lexend, sans-serif;
-  font-weight: 1000;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 12px 55px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 70px;
-  font-size: 2.2rem;
-}
 
-.btn-gold-transparent:hover {
-  color: var(--gold) !important;
-  text-shadow: 0 0 10px rgba(245, 180, 0, 0.5);
-  transform: scale(1.05);
-}
 
 .btn-gold-solid:hover {
   filter: brightness(1.1);
@@ -234,8 +215,12 @@ a {
 .hero {
   position: relative;
   z-index: 1;
-  background: #000 url("assets/image-1.jpeg") center center / 95% no-repeat;
+  background: #000 url("assets/image11.png") center center / 95% no-repeat;
   padding-bottom: 120px;
+}
+
+.hero-spacer {
+  margin-top: 480px;
 }
 
 /* Gold Glow Overlay */
@@ -414,7 +399,12 @@ footer {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .btn-gold-transparent {
-    margin-top: -60px;
+  .hero {
+    background-size: 100% 100%;
   }
+
+  .hero-spacer {
+    margin-top: 50vw;
+  }
+
 }
