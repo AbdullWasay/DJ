@@ -147,7 +147,7 @@ a {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(180deg, #fff9e6 0%, #f9d976 25%, #f5b400 50%, #b38728 75%, #806000 100%);
+  background: linear-gradient(180deg, #fff9e6 0%, #fff9e6 25%, #f9d976 50%, #b38728 75%, #806000 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,14 +155,25 @@ a {
   display: inline-block;
 }
 
-.btn-gold-solid {
-  background: linear-gradient(180deg, #F0E68C 0%, #d4af37 30%, #aa8528 70%, #806000 100%);
-  color: #000;
-  border: 1px solid #FFFFF0;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  font-family: Oswald, sans-serif;
+.btn-gold-transparent {
+  background: transparent;
+  color: #000000 !important;
+  border: none;
+  font-family: Lexend, sans-serif;
+  font-weight: 1000;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  padding: 12px 55px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 70px;
+  font-size: 2.2rem;
+}
+
+.btn-gold-transparent:hover {
+  color: var(--gold) !important;
+  text-shadow: 0 0 10px rgba(245, 180, 0, 0.5);
+  transform: scale(1.05);
 }
 
 .btn-gold-solid:hover {
@@ -222,7 +233,8 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  background: #000 url("assets/image-1.jpeg") center/85% no-repeat;
+  z-index: 1;
+  background: #000 url("assets/image-1.jpeg") center center / 95% no-repeat;
   padding-bottom: 120px;
 }
 
@@ -244,8 +256,10 @@ a {
 }
 
 .h1 {
-  font-family: Oswald, Montserrat, system-ui, sans-serif;
-  font-weight: 700;
+  font-family: Lexend, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   background: linear-gradient(180deg, #fff9e6 0%, #f9d976 25%, #f5b400 50%, #b38728 75%, #806000 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -253,9 +267,68 @@ a {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.8));
 }
 
+.media-heading {
+  font-family: "Oswald", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(1.6rem, 2.6vw, 3.2rem);
+}
+
+/* Shared typography for the 4 gold media texts (SEE THE ENERGY, VIDEO,
+   TESTIMONIALS, COMING SOON) so they all look consistent. */
+.media-gold-text {
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  /* Vertical gradient: light -> dark -> light */
+  background: linear-gradient(230deg, #bdb39b 0%, #dea132 55%, #d9c086 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+
+}
+
+/* Slightly thinner style just for "COMING SOON" */
+.media-gold-thin {
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+/* Form field labels (Name, Phone, etc.) */
+.form-label {
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  /* Solid label color */
+  color: #e8c78e;
+}
+
+.form-label::after {
+  content: ":";
+  margin-left: 2px;
+}
+
 .section {
   padding: 80px 0;
   background: #050505;
+}
+
+/* Media (second image) section with overlap */
+.media-section {
+  position: relative;
+  z-index: 2;
+  /* Pull the second section up so it slightly overlaps image 1 */
+  margin-top: -40px;
+}
+
+/* Draw the actual lines directly on the image wrapper so they don't get
+   affected by zoom/overlap quirks */
+.media-bg-wrapper {
+  border-top: 3px solid #c0a584;
+  border-bottom: 3px solid #c0a584;
 }
 
 .section.alt {
@@ -337,4 +410,11 @@ footer {
 .video-frame,
 .testimonials-frame {
   animation: glow 4s infinite ease-in-out;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .btn-gold-transparent {
+    margin-top: -60px;
+  }
 }
