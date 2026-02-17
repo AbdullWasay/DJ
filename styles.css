@@ -147,11 +147,12 @@ a {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(180deg, #efdca4 0%, #e6b422 100%);
+  background: linear-gradient(180deg, #fff9e6 0%, #f9d976 25%, #f5b400 50%, #b38728 75%, #806000 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 5px rgba(255, 215, 0, 0.4)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.8));
+  display: inline-block;
 }
 
 .btn-gold-solid {
@@ -211,10 +212,11 @@ a {
 .h1 {
   font-family: Oswald, Montserrat, system-ui, sans-serif;
   font-weight: 700;
-  background: -webkit-linear-gradient(var(--gold-light), var(--gold), var(--gold-dark));
+  background: linear-gradient(180deg, #fff9e6 0%, #f9d976 25%, #f5b400 50%, #b38728 75%, #806000 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.8));
 }
 
 .section {

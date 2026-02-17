@@ -249,9 +249,11 @@
 
   <script>
     // Helper to safely set text content if element exists
-    const safeSetText = (id, text) => {
+    const safeSetText = (id, text, isHTML = false) => {
       const el = document.getElementById(id);
-      if (el && text) el.textContent = text;
+      if (!el || !text) return;
+      if (isHTML) el.innerHTML = text;
+      else el.textContent = text;
     };
 
     fetch('content/data.json')
@@ -271,7 +273,7 @@
 
         // Hero
         if (data.hero) {
-          safeSetText('hero-title', data.hero.title);
+          safeSetText('hero-title', data.hero.title, true);
           safeSetText('hero-subtitle', data.hero.subtitle);
           safeSetText('hero-btn-primary', data.hero.btn_primary);
           safeSetText('hero-btn-secondary', data.hero.btn_secondary);
