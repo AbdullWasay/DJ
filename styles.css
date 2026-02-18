@@ -215,12 +215,12 @@ a {
 .hero {
   position: relative;
   z-index: 1;
-  background: #000 url("assets/image11.png") center center / 95% no-repeat;
+  background: #000 url("assets/image1.jpeg") center center / 95% no-repeat;
   padding-bottom: 120px;
 }
 
 .hero-spacer {
-  margin-top: 480px;
+  margin-top: 440px;
 }
 
 /* Gold Glow Overlay */
@@ -238,6 +238,48 @@ a {
 .hero-inner {
   position: relative;
   padding: 60px 0;
+}
+
+/* Transparent overlay buttons on hero image (Instagram, Book Now, WhatsApp) */
+.hero-cta-overlays {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  z-index: 10;
+  width: 100%;
+  max-width: 480px;
+}
+
+.hero-cta-overlay {
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.hero-cta-instagram {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.hero-cta-book {
+  width: 260px;
+  height: 52px;
+  flex: 0 0 260px;
+}
+
+.hero-cta-whatsapp {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
 }
 
 .h1 {
