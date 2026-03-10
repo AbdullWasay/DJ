@@ -282,6 +282,17 @@ a {
   flex-shrink: 0;
 }
 
+/* Testimonials right-frame video placeholder */
+.testimonials-video-wrapper {
+  width: 94%;
+  height: 99%;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .h1 {
   font-family: Lexend, sans-serif;
   font-weight: 800;

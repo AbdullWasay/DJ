@@ -92,17 +92,28 @@
           </div>
         </div>
 
-        <!-- Testimonials: Moved closer to center (Right 8%) -->
+        <!-- Testimonials: Right-side frame. When a testimonials video URL is set in the CMS,
+             it will appear in this frame and the "Video Testimonials Coming Soon" text will be hidden. -->
         <div class="testimonials-frame"
           style="position:absolute; top:10%; right:3%; width:28%; height:82%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
-          <h3 id="testimonials-title" class="media-gold-text"
-            style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; line-height:1.2;">
-            VIDEO
-            TESTIMONIALS
-          </h3>
-          <p id="testimonials-status" class="media-gold-text media-gold-thin"
-            style="font-size:clamp(1rem, 2vw, 2rem); margin:0;">COMING
-            SOON</p>
+
+          <!-- Video placeholder that fits inside the ornate frame -->
+          <div class="testimonials-video-wrapper">
+            <video id="testimonialsVideo" controls style="width:100%; height:100%; object-fit:cover;"></video>
+          </div>
+
+          <!-- Fallback text shown only when no video URL is configured
+          <div id="testimonials-copy">
+            <h3 id="testimonials-title" class="media-gold-text"
+              style="font-size:clamp(1.5rem, 3vw, 3.5rem); margin-bottom:10px; line-height:1.2;">
+              VIDEO
+              TESTIMONIALS
+            </h3>
+            <p id="testimonials-status" class="media-gold-text media-gold-thin"
+              style="font-size:clamp(1rem, 2vw, 2rem); margin:0;">COMING
+              SOON</p>
+          </div>
+          -->
         </div>
       </div>
     </div>
@@ -264,6 +275,17 @@
           safeSetText('media-title', data.media.title);
           safeSetText('testimonials-title', data.media.testimonials_title);
           safeSetText('testimonials-status', data.media.testimonials_subtitle);
+
+          // Testimonials video in right-side frame. When a URL is provided in the CMS,
+          // show the video and hide the "Video Testimonials Coming Soon" text.
+          const testimonialsVideo = document.getElementById('testimonialsVideo');
+          const testimonialsCopy = document.getElementById('testimonials-copy');
+          if (testimonialsVideo && data.media.testimonialsVideoUrl) {
+            testimonialsVideo.src = data.media.testimonialsVideoUrl;
+            if (testimonialsCopy) testimonialsCopy.style.display = 'none';
+          } else if (testimonialsCopy) {
+            testimonialsCopy.style.display = 'block';
+          }
         }
 
         // CTA
