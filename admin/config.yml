@@ -46,6 +46,11 @@ collections:
               - { label: "Main Title", name: "title", widget: "string" }
               - { label: "Testimonials Heading", name: "testimonials_title", widget: "string" }
               - { label: "Testimonials Status", name: "testimonials_subtitle", widget: "string" }
+              - label: "Testimonials Video"
+                name: "testimonialsVideoUrl"
+                widget: "file"
+                required: false
+                hint: "Upload an MP4 testimonials reel for the right-hand frame."
 
           - label: "Booking Section"
             name: "cta"
